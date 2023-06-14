@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 wandb/
+tutorials/nn_basics/data/
