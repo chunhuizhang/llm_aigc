@@ -130,3 +130,5 @@ dmypy.json
 
 wandb/
 tutorials/nn_basics/data/
+
+runs/
