@@ -132,3 +132,5 @@ wandb/
 tutorials/nn_basics/data/
 
 runs/
+
+.idea/
