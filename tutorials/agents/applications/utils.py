@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 from icecream import ic
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+os.environ['http_proxy'] = 'http://127.0.0.1:7890'
+os.environ['https_proxy'] = 'http://127.0.0.1:7890'
 
 load_dotenv()  # read local .env file
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
