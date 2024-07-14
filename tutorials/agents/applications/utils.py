@@ -574,6 +574,8 @@ def multichunk_translation(
         source_lang, target_lang, source_text_chunks
     )
 
+    print(f'initial translation: {translation_1_chunks}')
+    
     reflection_chunks = multichunk_reflect_on_translation(
         source_lang,
         target_lang,
@@ -581,6 +583,7 @@ def multichunk_translation(
         translation_1_chunks,
         country,
     )
+    print(f'reflection: {reflection_chunks}')
 
     translation_2_chunks = multichunk_improve_translation(
         source_lang,
@@ -589,7 +592,7 @@ def multichunk_translation(
         translation_1_chunks,
         reflection_chunks,
     )
-
+    print(f'final translation: {translation_2_chunks}')
     return translation_2_chunks
 
 
