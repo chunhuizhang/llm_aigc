@@ -14,8 +14,9 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # 数据加载和预处理
 transform = transforms.Compose([
+    # 0-1 之间
     transforms.ToTensor(),
-    transforms.Normalize((0.1307,), (0.3081,))
+    # transforms.Normalize((0.1307,), (0.3081,))
 ])
 
 train_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform)
