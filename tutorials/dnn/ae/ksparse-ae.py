@@ -16,6 +16,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 transform = transforms.Compose([
     # 0-1 之间
     transforms.ToTensor(),
+    # 这种运行不会出错的，数据/逻辑bug，很难排查
     # transforms.Normalize((0.1307,), (0.3081,))
 ])
 
